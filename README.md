@@ -9,14 +9,6 @@
  * Rating and review
  * Special Menus management
 
-### HLD
-
-![alt hld](./static/zomato.drawio.png)
-
-### Class Diagram
-![alt classdiagram](./static/class_uml.drawio.png)
-
-
 ### Database Management Selection 👈
     
 #### 1. PostgreSQL(Selected) 
