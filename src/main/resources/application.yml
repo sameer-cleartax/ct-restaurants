@@ -1,0 +1,14 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: false
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+
+  datasource:
+    initialization-mode: always
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/testdb
+    username: sameer
+    password: password

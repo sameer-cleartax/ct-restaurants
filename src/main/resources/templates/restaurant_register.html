@@ -1,0 +1,32 @@
+<html>
+<body>
+<h1>Register A Restaurant</h1>
+<form th:action="@{/v1/auth/register-a-restaurant}" th:object="${restaurant}" method="POST" enctype="utf8">
+    <div>
+        <label>Restaurant Name</label>
+        <input th:field="*{restaurantName}"/>
+        <p th:each="error: ${#fields.errors('restaurantName')}"
+           th:text="${error}">Validation error</p>
+    </div>
+    <div>
+        <label>Email Id</label>
+        <input type="email" th:field="*{emailId}"/>
+        <p th:each="error : ${#fields.errors('emailId')}"
+           th:text="${error}">Validation error</p>
+    </div>
+    <div>
+        <label>Phone Number</label>
+        <input type="tel" th:field="*{phoneNumber}"/>
+        <p th:each="error : ${#fields.errors('phoneNumber')}"
+           th:text="${error}">Validation error</p>
+    </div>
+    <div>
+        <label>Password</label>
+        <input type="password" th:field="*{password}"/>
+        <p th:each="error : ${#fields.errors('password')}"
+           th:text="${error}">Validation error</p>
+    </div>
+    <button type="submit">submit</button>
+</form>
+</body>
+</html>
